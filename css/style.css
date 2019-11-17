@@ -1,0 +1,660 @@
+@font-face{
+    font-family: 'Quentin';
+    src: url('../font/Quentin.ttf');
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: 100% 100%; 
+}
+
+.desk{
+  top: 25%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  width: 100%;
+  font-weight: 100;
+  font-family: 'Comfortaa', cursive;
+}
+
+.f{
+  color :#ffffff;
+  font-size: 180px;
+  font-weight: 100;
+  font-family: 'Quentin';
+}
+
+
+.job1{
+    color : #f3f2f2f5;
+    margin-top: -130px;
+    font-size: 12px;
+}
+
+
+.vid{
+  width: 60%;
+  float: right;
+  margin-right: 25px;
+}
+
+
+.coba{
+  width:100%;
+  height:800px;
+  background: #151c30;
+  overflow: hidden;
+}
+
+
+.koloms {
+    position: relative;
+    float: left;
+    width: 22%;
+    padding: 0 10px;
+  }
+  
+.cm{
+    position: relative;
+    top:15%;
+    left:3%;
+  }
+  
+  .card {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 180px;
+    text-align: left;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+
+  .bcard1{
+    background: #55b3b3de;
+    
+  }
+
+  
+  .bcard2{
+    background: #5569b3db;
+  }
+
+  .bcard3{
+    background: #8255b3db;
+  }
+
+  .bcard4{
+    background: #ad55b3db;
+  }
+
+  .bcard5{
+    background: #b35573db;
+  }
+
+  .bcard6{
+    background: #b36255db;
+  }
+
+  .bcard7{
+    background: #7055b3db;
+  }
+
+  .bcard8{
+    background: #55a6b3db;
+  }
+
+  
+
+  .bcard1 , .bcard2 , .bcard3 , .bcard4 , .bcard5 , .bcard6 , .bcard7 , .bcard8{
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+  }
+
+  #bcard:hover{
+    backdrop-filter: blur(10px);
+    background-color: rgba(156, 142, 142, 0.5);
+  }
+  
+  
+  h1.jobs{
+    position: absolute;
+    top: 40%;
+    width: 100px;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: normal;
+    line-height: 35px;
+    font-size: 30px;
+    color: #eef4f5f5;
+  }
+  
+  /* #job:hover{
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  } */
+
+  p.jname{
+    color: #d8cacaf5;
+    position: absolute;
+    font-size: 12px;
+    top: 90%;
+    text-align: center;
+    left:50%;
+    width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  
+  /* Modal PopUp */
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    border-radius: 5px;
+    background-color: #fefefee3;
+    height: 50%;
+    padding: 5px;
+    width: 60%;
+    position: fixed;
+    left: 23%;
+    top: 25%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 2%;
+    right: 2%;
+  }
+  
+  h1.modaltitle{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    position: relative;
+    left: 2%;
+    top: 5%;
+    color: #463b3b;
+  }
+  
+  .modaldesk{
+    position: relative;
+    top: 8%;
+    left: 2%;
+    width: 50%;
+    float: left;
+  }
+
+  .karya{
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    font-size: 12px;
+    color: #a59494;
+  }
+  
+  .list{
+    font-family: 'Comfortaa', cursive;
+    font-weight: normal;
+    font-size: 14px;
+    color: #a59494;
+  }
+  .modalgraph{
+    position: relative;
+    top: 8%;
+    left: 2%;
+    width: 90%;
+    float: left;
+  }
+
+  .karyagraph{
+    border-radius : 5px;
+    height: 170px;
+    width : 170px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+  }
+
+
+  .karya:hover{
+    color: #463e3e;
+  }
+
+  .vertical{
+    display:none;
+  }
+  /* .vertical{
+    height: 100px;
+    position: absolute;
+    left: 36%;
+    top: 40%;
+    width: 1px;
+    border: 1px;
+    background: #d4cbcb;
+  } */
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  /* BLURRED */
+      
+    .bio{
+      margin-top: -100px;
+      position: absolute;
+      right: 0%;
+      background : rgb(216, 189, 138);
+      background-size: 100% 100%;
+      height: 300px;
+      width: 80%;
+      border-radius: 10px 0px 0px 10px;
+      margin-bottom: 200px;
+    }
+
+    .bio p {
+      margin: 100px;
+      width: 330px;
+      font-size: 13px;
+      color : #fff;
+      line-height: 15px;
+      font-weight: 100;
+    }
+
+    .tauran{
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      left:55%;
+      top:10%;
+      box-shadow: -1px 4px 4px 0px #19171736;
+      border-radius: 50%;
+    }
+
+    .frns{
+      font-family: 'Quentin';
+      font-size: 20px;
+    }
+   
+    .garis{
+        height: 1px;
+        width: 80px;
+        position: absolute;
+        top:66%;
+        left:10%;
+        background: #469296;
+    }
+
+    /* Activity */
+    .activity{
+      width: 100%;
+      height:500px;
+      margin-top: 320px
+    }
+
+    .activity h1{
+      margin: 50px;
+      text-align: center;
+      font-weight: 100;
+    }
+
+
+
+    /* Neusant Team */
+
+    .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #151c30;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.picture {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+.picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.detail h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.detail span {
+  display: block;
+  font-size: 16px;
+  color: #f44336;
+}
+
+
+/* 
+     */
+
+  @media (min-width: 0px) and (max-width: 600px)  {
+
+
+    .f{
+      font-size: 80px;
+    }
+
+    .bio{
+      margin-top: -50px;
+      height: 290px;
+      width: 85%;
+      right:-50%;
+      border-radius: 10px;
+      transform: translateX(-67%);
+    }
+
+    .bio p {
+      position: absolute;
+      left:30%;
+      text-align: center;
+      transform: translateX(-53%) translateY(-45%);
+      width: 70%;
+      top:43%;
+    }
+
+    .tauran{
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 130px;
+      height: 130px;
+      top:35%;
+    }
+
+    .frns{
+      font-family: 'Quentin';
+      font-size: 20px;
+    }
+   
+    .garis{
+      display: none;
+    }
+
+
+    
+    .vid {
+      width: 430px;
+      height: 50px;
+      margin-top: 50px;
+      
+  }
+  
+    .modaldesk{
+      position: relative;
+      top: 6%;
+      left: 2%;
+      width: 95%;
+      float: left;
+      font-family: 'Comfortaa', cursive;
+      font-weight: normal;
+      font-size: 12px;
+      color: #a59494;
+    }
+    
+     .vertical {
+     display: none;
+  }
+
+
+
+
+    .modal-content {
+      border-radius: 5px;
+      background-color: #fefefe;
+      height: 60%;
+      padding: 5px;
+      width: 90%;
+      position: fixed;
+      left: 4.2%;
+      top: 25%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    
+
+
+    .bulan{
+      left: 40%;
+    }
+
+    .background img{
+      width:100%; 
+      height:700px;
+    }
+    .koloms {
+      width: 90%;
+    }
+
+    .coba{
+      height : auto;
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+    
+  }
+
+  @media (min-width: 601px) and (max-width: 1124px) {
+
+    .f {
+    font-size: 140px;
+    }
+
+    .job1 {
+        margin-top: -90px;
+    }
+
+    .bio{
+      margin-top: -40px;
+      height: 290px;
+      width: 85%;
+      right:-50%;
+      border-radius: 10px;
+      transform: translateX(-67%);
+    }
+
+    .bio p {
+      position: absolute;
+      left:30%;
+      text-align: center;
+      transform: translateX(-53%) translateY(-45%);
+      width: 70%;
+      top:43%;
+    }
+
+    .tauran{
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 130px;
+      height: 130px;
+      top:35%;
+    }
+
+    .frns{
+      font-family: 'Quentin';
+      font-size: 20px;
+    }
+   
+    .garis{
+      display: none;
+    }
+
+
+    .vid {
+      width: 475px;
+      position: absolute;
+      top: 39%;
+      left: 50%;
+      height: 50px;
+      transform: translateX(-50%);
+  }
+  
+    .modaldesk{
+      position: relative;
+      top: 6%;
+      left: 2%;
+      width: 90%;
+      float: left;
+      font-family: 'Comfortaa', cursive;
+      font-weight: normal;
+      font-size: 12px;
+      color: #a59494;
+    }
+
+   
+    
+   
+
+    .vertical {
+      height: 1px;
+      position: absolute;
+      top: 40%;
+      width: 30%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      border: 1px;
+      background: #d4cbcb;
+  }
+
+    .modal-content {
+      border-radius: 5px;
+      background-color: #fefefe;
+      height: 60%;
+      padding: 5px;
+      width: 80%;
+      position: fixed;
+      left: 10%;
+      top: 25%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .background img{
+      width:150%;
+      height:700px;
+    }
+
+    .koloms {
+      width: 45%;
+    }
+
+    .coba{
+      height : auto;
+      padding-bottom: 100px;
+      padding-top: 100px;
+    }
+  }
+  
+  
+
+    /* iPhone 5 */
+    @media (min-width: 320px) and (max-width: 568px) {
+  
+    
+  
+      .desk{
+        top: 30%;
+      }
+      
+  
+      .job1 {
+        margin-top: -50px;
+        font-size: 8px;
+    }
+  
+    }
+
+   /* iPhone X */
+  @media (min-width: 375px) and (max-width: 812px) {
+  
+    
+    .container{
+      height: 83vh;
+    }
+
+    .desk{
+      top: 20%
+    }
+    
+    .vertical{
+      display: none;
+    }
+
+    .job1 {
+      margin-top: -50px;
+      font-size: 8px;
+  }
+
+  }
+
+ 

@@ -1,0 +1,211 @@
+  .cards {
+    overflow: hidden;
+  }
+  .cards .cards__list {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+    width: 2800px;
+    padding: 0;
+  }
+  .cards .cards__list:before, .cards .cards__list:after {
+    content: " ";
+    display: table;
+  }
+  .cards .cards__list:after {
+    clear: both;
+  }
+  .cards .cards__list:hover .cardl {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  .cards .cards__list li {
+    float: left;
+  }
+  .cards .cardl {
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    -webkit-animation-duration: 50s;
+            animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    text-align: center;
+    margin: 0 30px 0 0;
+    overflow: hidden;
+    background: rgb(240, 241, 241);
+    padding: 20px;
+  }
+  .cards .cardl > a {
+    color: inherit !important;
+  }
+  .cards .cardl blockquote {
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translateX(-50%);
+    width: 330px;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 1.3em;
+  }
+  
+  #slide-card-5 {
+    -webkit-animation-name: cardslide-5;
+            animation-name: cardslide-5;
+  }
+  
+  @-webkit-keyframes cardslide-5 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    25% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    50% {
+      -webkit-transform: translateX(-1400px);
+              transform: translateX(-1400px);
+    }
+    75% {
+      -webkit-transform: translateX(-2100px);
+              transform: translateX(-2100px);
+    }
+    99.99% {
+      -webkit-transform: translateX(-2800px);
+              transform: translateX(-2800px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+
+  #slide-card-4 {
+    -webkit-animation-name: cardslide-4;
+            animation-name: cardslide-4;
+  }
+  
+  @-webkit-keyframes cardslide-4 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    25% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    50% {
+      -webkit-transform: translateX(-1400px);
+              transform: translateX(-1400px);
+    }
+    75% {
+      -webkit-transform: translateX(-2100px);
+              transform: translateX(-2100px);
+    }
+    99.99% {
+      -webkit-transform: translateX(-2800px);
+              transform: translateX(-2800px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  #slide-card-3 {
+    -webkit-animation-name: cardslide-3;
+            animation-name: cardslide-3;
+  }
+  
+  @-webkit-keyframes cardslide-3 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    25% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    50% {
+      -webkit-transform: translateX(-1400px);
+              transform: translateX(-1400px);
+    }
+    75% {
+      -webkit-transform: translateX(-2100px);
+              transform: translateX(-2100px);
+    }
+    75.01% {
+      -webkit-transform: translateX(700px);
+              transform: translateX(700px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  #slide-card-2 {
+    -webkit-animation-name: cardslide-2;
+            animation-name: cardslide-2;
+  }
+  
+  @-webkit-keyframes cardslide-2 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    25% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    50% {
+      -webkit-transform: translateX(-1400px);
+              transform: translateX(-1400px);
+    }
+    50.01% {
+      -webkit-transform: translateX(1400px);
+              transform: translateX(1400px);
+    }
+    75% {
+      -webkit-transform: translateX(700px);
+              transform: translateX(700px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  #slide-card-1 {
+    -webkit-animation-name: cardslide-1;
+            animation-name: cardslide-1;
+  }
+  
+  @-webkit-keyframes cardslide-1 {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+    25% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    25.01% {
+      -webkit-transform: translateX(2100px);
+              transform: translateX(2100px);
+    }
+    50% {
+      -webkit-transform: translateX(1400px);
+              transform: translateX(1400px);
+    }
+    75% {
+      -webkit-transform: translateX(700px);
+              transform: translateX(700px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }

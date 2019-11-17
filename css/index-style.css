@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.background{
+    top:0%;
+}
+
+
+.bulan{
+    top: 74%;
+    left: 43%;
+}
+
+.bln{
+    height:30px;
+}
+
+.background img{
+    width:190%; 
+    height:700px;
+}
+
+.langit{
+    width:2500px; 
+    height:800px; 
+    margin-top: -190px; 
+    margin-left: -400px;
+}
+
+.frans{
+    color : #fff;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+    top: 3%;
+    left: 3%;
+  }
+  
+
+  
+  
+
+.profile{
+    top:10%;
+    left: 43.2%;
+}
+
+
+
+.image{
+    border-radius: 50%; 
+    height:170px; 
+    width:170px;
+    box-shadow: 4px 4px 5px 1px #615b5b33;
+}
+
+
+.header{
+    display: flex;
+    height: 10vh;
+    align-items: flex-end;
+}
+
+.logo{
+    flex: 2;
+}
+
+.logo img{
+    height: 40px;
+    margin-left: 40px;
+}
